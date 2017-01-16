@@ -65,7 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:background="#fff"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    app:layout_scrollFlags="scroll">
 
                     <TextView
                         android:id="@+id/tv_title1"
@@ -75,7 +76,8 @@
                         android:gravity="center"
                         android:text="scrollFragment"
                         android:textColor="@color/select_option_title"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        app:layout_scrollFlags="scroll"/>
 
                     <TextView
                         android:id="@+id/tv_title2"
@@ -85,7 +87,8 @@
                         android:gravity="center"
                         android:text="recyclerFragment"
                         android:textColor="@color/select_option_title"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        app:layout_scrollFlags="scroll"/>
                 </LinearLayout>
 
             </android.support.design.widget.AppBarLayout>

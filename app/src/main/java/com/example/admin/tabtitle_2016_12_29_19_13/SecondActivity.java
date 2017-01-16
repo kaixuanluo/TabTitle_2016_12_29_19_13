@@ -6,6 +6,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
 
-        NoScrollViewPager nsvp = (NoScrollViewPager) findViewById(R.id.nsvp);
+        ViewPager nsvp = (ViewPager) findViewById(R.id.nsvp);
         TabLayout tl = (TabLayout) findViewById(R.id.tl);
 
         List<TabFragment> tabFragmentList = new ArrayList<>();
